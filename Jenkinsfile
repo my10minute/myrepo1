@@ -7,5 +7,10 @@ pipeline {
         echo 'stage-task2'
       }
     }
+    stage('stage2') {
+      steps {
+        sh 'echo \'stage2-step1\''
+      }
+    }
   }
 }
