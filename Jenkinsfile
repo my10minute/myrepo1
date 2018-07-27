@@ -14,6 +14,11 @@ pipeline {
             echo 'parallelstage1-task1'
           }
         }
+        stage('parallelstage1-2') {
+          steps {
+            sh 'echo \'ps1-2'
+          }
+        }
       }
     }
     stage('stage2') {
