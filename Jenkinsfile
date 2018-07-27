@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Stage1') {
       parallel {
-        stage('Stage1') {
+        stage('Build-Stage1') {
           steps {
             sh 'echo \'shell script123\''
             echo 'stage-task2'
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('parallelstage1-2') {
           steps {
-            sh 'echo \'ps1-2'
+            sh 'echo \'ps1-2\''
           }
         }
       }
